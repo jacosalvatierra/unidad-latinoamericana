@@ -1,0 +1,11 @@
+# Bloquear acceso directo al archivo de base de datos SQLite
+<Files "unidad_latinoamericana.db">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Bloquear acceso a archivos de configuración .php si es directo (opcional, aunque config.php ya lo previene)
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
